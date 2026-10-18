@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EMBLEMIA | Medallas, monedas y emblemas conmemorativos</title>
+  <meta name="description" content="Transformamos historias importantes en símbolos que permanecen. Medallas conmemorativas, monedas, pines, llaveros e imanes personalizados.">
+  <meta name="theme-color" content="#04192B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wdth,wght@100,400;112,500;125,600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Símbolos reutilizables (isotipo aproximado: sustituir por el SVG oficial) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="iso" viewBox="0 0 100 120">
+        <polygon points="50,2 54,12 65,12 56,19 60,30 50,23 40,30 44,19 35,12 46,12" fill="currentColor"/>
+        <path d="M50 40 L86 58 V74 M86 92 L50 112 L14 92 V58 L50 40 M14 76 H58" fill="none" stroke="currentColor" stroke-width="9" stroke-linejoin="miter"/>
+      </symbol>
+      <symbol id="star" viewBox="0 0 24 24"><polygon points="12,1 15,9 23,9 17,14 19,22 12,17 5,22 7,14 1,9 9,9" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <svg class="preloader__iso"><use href="#iso"/></svg>
+    <span class="preloader__text">EMBLEMIA</span>
+    <div class="preloader__bar"><i></i></div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <a href="#inicio" class="brand" aria-label="EMBLEMIA - Inicio">
+      <svg class="brand__iso"><use href="#iso"/></svg>
+      <span class="brand__name metal-text">EMBLEMIA</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#acabados">Acabados</a>
+      <a href="#por-que">Por qué Emblemia</a>
+      <a href="#contacto" class="btn btn--small magnetic">Cotizar</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" data-parallax="0.15"></div>
+      <div class="hero__sparks" id="sparks" aria-hidden="true"></div>
+      <div class="hero__grid container">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Medallas · Monedas · Pines · Llaveros · Imanes</p>
+          <h1 class="hero__title">
+            <span class="line"><span class="line__in">Cada historia,</span></span>
+            <span class="line"><span class="line__in metal-text gold">un emblema</span></span>
+            <span class="line"><span class="line__in">que permanece.</span></span>
+          </h1>
+          <p class="hero__lead reveal">Transformamos logros, instituciones y territorios en piezas metálicas hechas con oficio, para conservarse con orgullo. No vendemos objetos: creamos símbolos.</p>
+          <div class="hero__cta reveal">
+            <a href="#contacto" class="btn magnetic">Cotizar mi emblema</a>
+            <a href="#productos" class="btn btn--ghost magnetic">Ver productos</a>
+          </div>
+        </div>
+        <div class="hero__coin" id="coinStage">
+          <div class="coin" id="coin">
+            <div class="coin__face coin__face--front">
+              <img src="moneda-carnaval.webp" alt="Moneda conmemorativa Corpocarnaval con máscara en relieve y esmalte" width="1000" height="1000" decoding="async">
+            </div>
+            <div class="coin__face coin__face--back">
+              <img src="moneda-pasto100.webp" alt="Moneda conmemorativa Pasto, 100 años de Carnaval, 1927-2027" width="1000" height="1000" decoding="async">
+            </div>
+          </div>
+          <div class="coin__shadow"></div>
+        </div>
+      </div>
+      <a href="#nosotros" class="scroll-hint" aria-label="Bajar"><span></span></a>
+    </section>
+
+    <!-- MARQUESINA -->
+    <section class="marquee" aria-label="Lemas de la marca">
+      <div class="marquee__track">
+        <span>Antes de ser pieza, fue historia</span><svg><use href="#star"/></svg>
+        <span>No fundimos metal. Fundimos memoria</span><svg><use href="#star"/></svg>
+        <span>Lo que merece permanecer</span><svg><use href="#star"/></svg>
+        <span>Tu historia merece un emblema</span><svg><use href="#star"/></svg>
+        <span>Antes de ser pieza, fue historia</span><svg><use href="#star"/></svg>
+        <span>No fundimos metal. Fundimos memoria</span><svg><use href="#star"/></svg>
+        <span>Lo que merece permanecer</span><svg><use href="#star"/></svg>
+        <span>Tu historia merece un emblema</span><svg><use href="#star"/></svg>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="about section" id="nosotros">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="eyebrow reveal">Nosotros</p>
+          <h2 class="title reveal">Las historias importantes <em class="metal-text">merecen permanecer</em></h2>
+          <p class="reveal">El ascenso que costó años, el juramento que marcó una vida, el abuelo que fundó algo, el equipo que logró lo imposible. Todo eso vive en la memoria… y la memoria se desgasta.</p>
+          <p class="reveal">Emblemia nace de esa incomodidad. Tomamos algo intangible y le damos un cuerpo que resiste al tiempo. Por eso escuchamos antes de crear y trabajamos el metal como quien guarda algo valioso: con oficio, con respeto, con la intención de que dure.</p>
+          <a href="#contacto" class="btn btn--ghost magnetic reveal">Conoce tu pieza ideal</a>
+        </div>
+        <div class="about__quote reveal">
+          <span class="script">Un símbolo bien hecho sobrevive a quien lo creó.</span>
+          <div class="pillars">
+            <div><b>Identidad</b></div><div><b>Memoria</b></div><div><b>Pertenencia</b></div><div><b>Honor</b></div><div><b>Permanencia</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="products section" id="productos">
+      <div class="container">
+        <p class="eyebrow reveal">Trabajamos exclusivamente piezas personalizadas</p>
+        <h2 class="title reveal">¿Qué <em class="metal-text">emblemas</em> creamos?</h2>
+        <div class="grid">
+          <article class="card tilt reveal">
+            <div class="piece piece--medal"><i class="ribbon"></i><svg><use href="#iso"/></svg></div>
+            <h3>Medallas conmemorativas</h3>
+            <p>Ascensos, promociones, aniversarios y reconocimientos con cinta y acabado premium.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="piece piece--coin"><svg><use href="#iso"/></svg></div>
+            <h3>Monedas conmemorativas</h3>
+            <p>Relieve 2D o 3D para instituciones, promociones, eventos y coleccionistas.</p>
+            <button type="button" class="btn btn--small magnetic card__btn" data-open-catalog>Ver catálogo</button>
+          </article>
+          <article class="card tilt reveal">
+            <div class="piece piece--pin"><svg><use href="#iso"/></svg></div>
+            <h3>Pines y botones</h3>
+            <p>Insignias de solapa con esmalte, relieve y grabado láser.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="piece piece--keyring"><svg><use href="#iso"/></svg></div>
+            <h3>Llaveros</h3>
+            <p>Un símbolo que acompaña todos los días, en metal con acabado cuidado.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="piece piece--magnet"><svg><use href="#iso"/></svg></div>
+            <h3>Imanes</h3>
+            <p>Souvenirs regionales con identidad cultural y de territorio.</p>
+          </article>
+          <article class="card tilt reveal">
+            <div class="piece piece--plate"><svg><use href="#iso"/></svg></div>
+            <h3>Placas y piezas por encargo</h3>
+            <p>Insignias, placas y cristales 3D personalizados según tu historia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="process section" id="proceso">
+      <div class="container">
+        <p class="eyebrow reveal">Del recuerdo al metal</p>
+        <h2 class="title reveal">Cómo nace <em class="metal-text">tu emblema</em></h2>
+        <ol class="steps">
+          <li class="reveal"><span class="steps__n metal-text">01</span><h3>Escuchamos</h3><p>Nos cuentas la fecha, la institución y el significado. Escuchamos antes de vender.</p></li>
+          <li class="reveal"><span class="steps__n metal-text">02</span><h3>Diseñamos</h3><p>Convertimos tu historia y tus símbolos en una propuesta de pieza precisa.</p></li>
+          <li class="reveal"><span class="steps__n metal-text">03</span><h3>Forjamos</h3><p>Trabajamos el metal con oficio: relieve, grabado y el acabado que elijas.</p></li>
+          <li class="reveal"><span class="steps__n metal-text">04</span><h3>Entregamos</h3><p>Una pieza digna de guardar, acompañada desde la idea hasta tus manos.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ACABADOS -->
+    <section class="finishes section" id="acabados">
+      <div class="container">
+        <p class="eyebrow reveal">Oficio en metal</p>
+        <h2 class="title reveal">Acabados <em class="metal-text">premium</em></h2>
+        <div class="swatches">
+          <div class="swatch reveal"><i class="sw sw--gold"></i><span>Oro</span></div>
+          <div class="swatch reveal"><i class="sw sw--silver"></i><span>Plata antigua</span></div>
+          <div class="swatch reveal"><i class="sw sw--bright"></i><span>Dorado</span></div>
+          <div class="swatch reveal"><i class="sw sw--color"></i><span>Full color</span></div>
+          <div class="swatch reveal"><i class="sw sw--relief"></i><span>Relieve</span></div>
+          <div class="swatch reveal"><i class="sw sw--laser"></i><span>Grabado láser</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ -->
+    <section class="why section" id="por-que">
+      <div class="container why__grid">
+        <div>
+          <p class="eyebrow reveal">No somos una marca de metal</p>
+          <h2 class="title reveal">Somos una marca de <em class="metal-text">símbolos</em></h2>
+          <p class="reveal">Cada pieza debe representar identidad, pertenencia, honor, memoria o reconocimiento. Si no carga una historia, no es Emblemia.</p>
+        </div>
+        <ul class="why__list">
+          <li class="reveal"><b>01</b> Símbolo primero: el significado manda sobre la venta.</li>
+          <li class="reveal"><b>02</b> Premium sin ostentación: elegancia sobria y acabados cuidados.</li>
+          <li class="reveal"><b>03</b> Personalización real según tu historia, institución o evento.</li>
+          <li class="reveal"><b>04</b> Acompañamiento personal desde la idea hasta la entrega.</li>
+          <li class="reveal"><b>05</b> Para instituciones, Fuerza Pública, empresas, colegios, turismo y particulares.</li>
+          <li class="reveal"><b>06</b> Respeto por las creencias, instituciones y tradiciones de cada cliente.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section" id="contacto">
+      <div class="container cta__inner">
+        <svg class="cta__iso"><use href="#iso"/></svg>
+        <h2 class="cta__title">Tu historia merece <span class="metal-text gold">un emblema.</span></h2>
+        <p class="reveal">Cuéntanos qué quieres recordar. Con la fecha del evento y una referencia de escudo o diseño, te preparamos una propuesta.</p>
+        <div class="cta__buttons reveal">
+          <a class="btn magnetic" href="https://wa.me/573105492218?text=Hola%20Emblemia%2C%20quiero%20cotizar%20una%20pieza." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          <a class="btn btn--ghost magnetic" href="https://instagram.com/emblemia_col" target="_blank" rel="noopener">@emblemia_col</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Catálogo de monedas -->
+  <div class="modal catalog" id="catalog" role="dialog" aria-modal="true" aria-labelledby="catTitle" aria-hidden="true">
+    <div class="modal__box container">
+      <button type="button" class="modal__close" data-close aria-label="Cerrar catálogo">&times;</button>
+      <h2 class="title" id="catTitle">Monedas <em class="metal-text">conmemorativas</em></h2>
+      <p class="catalog__lead">Cada moneda cuesta $30.000 COP. Gírala en 3D antes de comprarla.</p>
+      <div class="catalog__grid" id="catGrid"></div>
+    </div>
+  </div>
+
+  <!-- Visor 3D -->
+  <div class="modal viewer" id="viewer" role="dialog" aria-modal="true" aria-labelledby="vName" aria-hidden="true">
+    <button type="button" class="modal__close" data-close aria-label="Cerrar visor 3D">&times;</button>
+    <div class="viewer__stage" id="vStage"><div class="coin coin--v" id="vCoin"></div></div>
+    <div class="viewer__info">
+      <h3 id="vName"></h3>
+      <p id="vDesc"></p>
+      <p class="price" id="vPrice"></p>
+      <div id="vQtyBox"></div>
+      <button type="button" class="btn" id="vBuy">Comprar</button>
+      <small>Arrastra para girar la moneda</small>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand"><svg class="brand__iso"><use href="#iso"/></svg><span class="brand__name metal-text">EMBLEMIA</span></div>
+        <p>Memory made symbol. La memoria hecha símbolo.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#proceso">Proceso</a><a href="#acabados">Acabados</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="https://wa.me/573105492218" target="_blank" rel="noopener">WhatsApp 310 549 2218</a>
+        <a href="https://instagram.com/emblemia_col" target="_blank" rel="noopener">Instagram @emblemia_col</a>
+      </div>
+    </div>
+    <p class="footer__legal">© <span id="year">2026</span> Emblemia · Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
